@@ -59,7 +59,7 @@ class Main extends PluginBase implements Listener {
   public function banui($player, $buttonid){
   if($buttonid === 0){
     $ui = new \Plexus\utils\UI\SimpleUI(25531);
-    $ui->addTitle(T::AQUA ."BanUI ". T::YELLOW . $this->ver);
+    $ui->addTitle(T::AQUA ."Transfer to Server". T::YELLOW . $this->ver);
     $ui->addContent(T::AQUA ."Click a player you want to ban\n\nto update the list click Update\n\n");
     $onlineP = $this->getServer()->getOnlinePlayers();
     $ui->addButton("Update", -1);
