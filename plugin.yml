@@ -1,0 +1,10 @@
+name: BanUI
+main: ZeroDev\Main
+version: 1.0.0
+api: 3.0.0-ALPHA9
+load: STARTUP
+author: ZeroDevOfficial
+description: allows admins to ban/unban players with a gui
+commands:
+ banui:
+ description: Ban\Pardon UI!
