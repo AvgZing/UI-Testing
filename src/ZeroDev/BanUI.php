@@ -17,17 +17,17 @@ class BanUI extends VanillaCommand {
 
   public function __construct(\ZeroDev\Main $plugin){
     $this->plugin = $plugin;
-    parent::__construct('banui', 'allows admins to ban/unban players with a gui', '/banui');
+    parent::__construct('TransferUI', 'Transfer servers with a UI', '/trui');
     $this->setPermission('plugins.command');
   }
 
   public function execute(CommandSender $sender, $alias, array $args){
   if($sender instanceof Player){
-    $ui = new \Plexus\utils\UI\SimpleUI(25530);
-    $ui->addTitle(T::AQUA ."BanUI ". T::YELLOW . $this->plugin->ver);
-    $ui->addContent(T::AQUA ."What Would You Like to Do?");
-    $ui->addButton("Ban.", -1);
-    $ui->addButton("Pardon.", -1);
+    $ui = new \ZeroDev\UI\SimpleUI(25530);
+    $ui->addTitle(T::AQUA ."Transfer Servers ". T::YELLOW . $this->plugin->ver);
+    $ui->addContent(T::AQUA ."Choose an action!");
+    $ui->addButton("Transfer to HimbeerCraft", -1);
+    $ui->addButton("Get Some Info", -1);
     $ui->addButton("Cancel.", -1);
     $ui->send($sender);
     return true;
