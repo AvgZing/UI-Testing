@@ -9,13 +9,13 @@
 > Minecraft: v1.2.x
 
 # Issues
- # need to fix
+**need to fix**
 - [ ] ui/form id's will cause an issue 
 I need a better way to do the id's
 
 - [ ] clean up code (a lot)
 
- # need to add
+**need to add**
 - [ ] add pardon/unban
 
 - [ ] need to add kick
@@ -27,7 +27,7 @@ we do not recommend anyone to use this plugin at the moment,
 
 issues may be ignored if you choose to use this plugin.
 
-# what is working?
+**what is working?**
 well you can ban people but you cannot unban them
 
 
